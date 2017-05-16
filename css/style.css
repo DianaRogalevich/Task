@@ -167,7 +167,7 @@ h1, h2, h3, h4 {
     background-color: #fdd13b;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1228px) {
     .btn-city {
         margin-left: 0px;
     }
@@ -182,11 +182,23 @@ h1, h2, h3, h4 {
 }
 
 .btn-callback {
-    width: 190px;
+    width: 100%;
+}
+
+@media (max-width:1024px){
+  .btn-callback {
+    width: 100%;
+}
 }
 
 .btn-call {
-    width: 190px;
+    width: 100%;
+}
+
+@media (max-width:1024px){
+  .btn-call {
+    width: 100%;
+}
 }
 
 h1 {
@@ -217,7 +229,7 @@ h1 {
     left: 40%;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
     .album1 {
         display: none;
     }
@@ -232,7 +244,7 @@ h1 {
     width: 320px;
 }
 
-@media (max-width:1024px){
+@media (max-width:1200px){
   .part2 .btn {
     width: 100%;
 }
@@ -291,7 +303,7 @@ h4 {
     left: -4%;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
     .album2 {
         display: none;
     }
@@ -360,7 +372,7 @@ h4 {
     right: -4%;
 }
 
-@media screen and (max-width: 1024px) {
+@media  (max-width: 1200px) {
     .album3 {
         display: none;
     }
@@ -370,7 +382,7 @@ h4 {
     padding: 0;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1200px) {
     .part5 {
         padding-top: 0px;
         min-height: auto;
@@ -382,10 +394,18 @@ h4 {
 }
 
 .part6 {
-    min-height: 786px;
+    min-height: 785px;
     padding-top: 260px;
     background-color: #373540;
     color: #ffffff;
+}
+
+@media (max-width:1200px) {
+    .part6 {
+        padding-top: 0px;
+        min-height: auto;
+      -webkit-min-height: auto;
+    }
 }
 
 .part6 .container {
@@ -401,7 +421,7 @@ h4 {
     left: -8%;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
     .album4 {
         display: none;
     }
@@ -409,13 +429,6 @@ h4 {
 
 .part6 > .col-sm-12 {
     padding: 0;
-}
-
-@media (max-width:1024px) {
-    .part6 {
-        padding-top: 0px;
-        min-height: auto;
-    }
 }
 
 .part6 p {
@@ -441,7 +454,7 @@ h4 {
     text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
     .part7 {
         min-height: auto;
         margin-bottom: 5%;
@@ -501,7 +514,7 @@ h4 {
   background-color: #33303c;
 }
 
-@media (max-width:1024px){
+@media (max-width:1200px){
   .part8{
    min-height:auto;
    }
@@ -587,7 +600,7 @@ h4 {
     right: 0%;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
     .album5 {
         display: none;
     }
@@ -597,10 +610,10 @@ h4 {
   min-height: 500px;
 }
 
-@media (max-width:1024px){
+@media (max-width:1200px){
   .part9{
     padding-bottom: 40px;
-   min-height:auto;
+    min-height:auto;
    }
 }
 
@@ -668,45 +681,180 @@ h4 {
   color: #777777;
 }
 
-.social_btn a{
+@media (min-width:768px){
+  .sales img{
+width: 100%;
+    height: 100%;
+}
+}
+
+.social-btn a{
   position: relative;
   display: inline-block;
   vertical-align: baseline;
-  margin-right: 9px;
-  width: 41px;
-  min-height: 41px;
+  margin-right: 1%;
+  width: 28%;
+  line-height: 41px;
   font-size: 0px;
   cursor: pointer;
 }
 
-.social_btn a::before{
+.social-btn a::before{
     content: "";
     position: absolute;
     top: 0px;
     left: 0px;
     background-image: url(../img/vk_icon.png);
     width: 41px;
-    height: 41px
+    height: 41px;
 }
 
-.social_btn a:nth-child(1){
-  
+
+.social-btn a:nth-child(2)::before{
+  background-image: url(../img/insta_icon.png);
 }
 
-.social_btn a:nth-child(2){
-  
-}
-
-.social_btn a:nth-child(3){
+.social-btn a:nth-child(3)::before{
+  background-image: url(../img/fb_icon.png);
   margin-right: 0;
 }
 
+.part11{
+  padding-bottom: 55px;
+  background-color: #34323d;
+}
+
+.part11 h2{
+  padding-top:80px;
+  padding-bottom: 60px;
+  font-size: 33px;
+  line-height: 33px;
+  font-weight: 900;
+  color: #ffffff;
+  
+}
+
+.part11 .btn{
+  width: 100%;
+  background-color: #fed136;
+
+}
+
+.part12 p{
+  padding-bottom: 35px;
+  font-size: 18px;
+  text-align: center;
+  color: #777777;
+}
+
+.part12 h2{
+  padding-top: 80px;
+}
+
+.part12 h4{
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.part12 .row{
+  padding-bottom: 50px;
+}
+
+.part12 .row:last-child{
+  padding-bottom: 70px;
+}
+
+.process-production:nth-child(1), .process-production:nth-child(1) p, .process-production:nth-child(3), .process-production:nth-child(3) p, .process-production:nth-child(5), .process-production:nth-child(5) p{
+  text-align:right;
+}
+
+.process-production:nth-child(2), .process-production:nth-child(2) p, .process-production:nth-child(4), .process-production:nth-child(4) p{
+  text-align:left;
+}
+
+.part13{
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.part13 h2{
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+.carousel-indicators > li {
+  width: 15px;
+  height: 15px;
+    margin: 0 2px;
+    background-color: #bdbdbd;
+  border: none;
+}
+
+.carousel-indicators > li.active {
+  width: 15px;
+  height: 15px;
+  background-color: #fed136;
+}
+
+.part14{
+  min-height: 600px;
+  padding-top: 80px;
+  text-align: center;
+  background: url(../img/background_part.png) no-repeat #222222;
+  background-size: cover;
+}
+
+.part14 h2{
+}
+
+.part15{
+  padding-top: 40px;
+  padding-bottom: 30px;
+ min-height: 100px; 
+}
+
+.part15 a{
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 20%;
+  line-height: 41px;
+  font-size: 0px;
+  cursor: pointer; 
+}
+
+.part15 a::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fb_icon_black.png);
+    width: 41px;
+    height: 41px;
+}
+
+
+.part15 a:nth-child(2)::before{
+  background-image: url(../img/vk_icon_black.png);
+}
+
+.part15 a:nth-child(3)::before{
+  background-image: url(../img/insta_icon_black.png);
+  margin-right: 0;
+}
+
+.part15 a:nth-child(4)::before{
+  background-image: url(../img/google_icon_black.png);
+  margin-right: 0;
+}
+
+
   
 
 
 
 
 
-div, a, header, footer, p{
+/*div, a, header, footer, p{
   outline: 1px solid blue;
-}
+}*/
