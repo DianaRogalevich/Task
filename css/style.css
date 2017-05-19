@@ -138,7 +138,7 @@ h3 {
 }
 
 .navbar-collapse.in {
-    overflow-y: none;
+  overflow-y: none;
 }
 
 .icon-bar {
@@ -242,7 +242,7 @@ h1 {
   background: #33313b;
 }
 
-.layout-up{
+.layout-up {
   z-index: 1;
 }
 
@@ -262,10 +262,15 @@ h1 {
   }
 }
 
-
 .part2 .btn {
   padding: 20px 15px;
   width: 60%;
+}
+
+@media screen and (max-width:768px){
+  .part2 .btn {
+    width: 80%;
+}
 }
 
 .btn-yellow {
@@ -341,12 +346,12 @@ h4 {
   }
 }
 
-.row-visible-1{
+.row-visible-1 {
   margin: 0;
   text-align: right;
   width: 100%;
   height: 860px;
- background: url(../img/Album_3.png) 100% 100% no-repeat; 
+  background: url(../img/Album_3.png) 100% 100% no-repeat;
   background-position: 0 0;
 }
 
@@ -403,14 +408,13 @@ h4 {
   }
 }
 
-.row-visible-2{
+.row-visible-2 {
   margin: 0;
   width: 100%;
   height: 900px;
-  background: url(../img/Album_2.png) 100% 100% no-repeat; 
+  background: url(../img/Album_2.png) 100% 100% no-repeat;
   background-position: 100% 0;
 }
-
 
 .part5>.col-sm-12 {
   padding: 0;
@@ -427,7 +431,6 @@ h4 {
 .part5 p {
   text-align: right;
 }
-
 
 @media screen and (max-width:768px) {
   .part5 h3 {
@@ -487,11 +490,11 @@ h4 {
   }
 }
 
-.row-visible-3{
+.row-visible-3 {
   margin: 0;
   width: 100%;
   height: 820px;
-  background: url(../img/Album_4.png) 100% 100% no-repeat; 
+  background: url(../img/Album_4.png) 100% 100% no-repeat;
   background-position: 0 0;
 }
 
@@ -906,7 +909,7 @@ h4 {
   }
 }
 
-@media (min-width: 992px)  {
+@media (min-width: 992px) {
   .part12 img {
     width: 100%;
     height: auto;
@@ -925,10 +928,9 @@ h4 {
 }
 
 @media screen and (max-width:768px) {
-  .part13{
+  .part13 {
     padding-bottom: 20px;
   }
-  
   .part13 h2 {
     padding-top: 40px;
     padding-bottom: 10px;
@@ -967,8 +969,6 @@ h4 {
   }
 }
 
-
-
 .slides h4 {
   padding-top: 10px;
   margin-bottom: 0px;
@@ -992,8 +992,8 @@ h4 {
   }
 }
 
-.part13 .carousel-control{
-  top:20%;
+.part13 .carousel-control {
+  top: 20%;
 }
 
 .part14 {
