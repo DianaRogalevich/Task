@@ -141,6 +141,10 @@ h3 {
   overflow-y: none;
 }
 
+.navbar-toggle:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .icon-bar {
   background-color: #ffffff;
 }
@@ -352,8 +356,8 @@ h4 {
 .pt4::after {
   position: absolute;
   content: "";
-  width: 730px;
-  height: 860px;
+  width: 636px;
+  height: 745px;
   background: url(../img/Album_3.png) 100% 100% no-repeat;
   top: -1%;
   left: 0%;
@@ -400,7 +404,13 @@ h4 {
 
 .row-visible-4{
   text-align: center;
+  
 }
+
+.row-visible-4 img{
+  width: 100%;
+}
+
 
 .pt5 {
   position: relative;
@@ -418,10 +428,10 @@ h4 {
 .pt5::after{
   position: absolute;
   content: "";
-  width: 740px;
-  height: 1280px;
+  width: 552px;
+  height: 951px;
   background: url(../img/Album_2.png) 100% 100% no-repeat;
-  top: -45%;
+  top: -35%;
   right: 0%;
   z-index: 2;
 }
@@ -435,7 +445,7 @@ h4 {
 .row-visible-2 {
   margin: 0;
   width: 100%;
-  height: 900px;
+  height: 949px;
   background: url(../img/Album_2.png) 100% 100% no-repeat;
   background-position: 100% 0;
 }
@@ -464,7 +474,7 @@ h4 {
 
 .pt6 {
   position: relative;
-  min-height: 785px;
+  min-height: 625px;
   padding-top: 210px;
   background-color: #373540;
   color: #ffffff;
@@ -502,8 +512,8 @@ h4 {
 .pt6::after {
   position: absolute;
   content: "";
-  width: 850px;
-  height: 820px;
+  width: 692px;
+  height: 656px;
   background: url(../img/Album_4.png) 100% 100% no-repeat;
   top: -4%;
   left: 0%;
@@ -518,7 +528,7 @@ h4 {
 .row-visible-3 {
   margin: 0;
   width: 100%;
-  height: 820px;
+  height: 651px;
   background: url(../img/Album_4.png) 100% 100% no-repeat;
   background-position: 0 0;
 }
@@ -697,18 +707,19 @@ h4 {
   background-color: #ffd213;
 }
 
-.album5 {
+.pt8::after {
   position: absolute;
-  width: 750px;
-  height: 1280px;
+  content: "";
+  width: 688px;
+  height: 766px;
   background: url(../img/Album_5.png) 100% 100% no-repeat;
   background-size: contain;
-  top: -73%;
+  top: -10%;
   right: 0%;
 }
 
 @media (max-width: 1200px) {
-  .album5 {
+  .pt8::after {
     display: none;
   }
 }
@@ -916,11 +927,16 @@ h4 {
 }
 
 .pt12 p {
-  padding-bottom: 35px;
   font-size: 18px;
   line-height: 1.3;
   text-align: center;
   color: #777777;
+}
+
+@media (max-width:480px){
+  .pt12 p{
+    padding-bottom: 35px;
+  }
 }
 
 .pt12 h2 {
