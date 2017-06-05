@@ -13,22 +13,103 @@
 <body>
   <div class="header-item">
     <div class="row row-centered">
-      <div class="col-sm-offset-1 col-sm-4">
-        <div class="text-center">
-          <a href="#" class="btn text-center btn-enter">Войти в личный кабинет</a>
-          <a href="#" class="btn text-center btn-city">Минск</a>
+
+      <div class="col-sm-offset-1 col-sm-4 text-center">
+        <div class="inline-left-block text-center">
+          <a href="http://matthewslab.by/kabinet" class="btn btn-enter">Войти в личный кабинет</a>
+        </div>
+        <div class="dropdown text-center inline-right-block">
+          <a href="#" class="btn  btn-city dropdown-toggle" data-toggle="dropdown"><span id="currentCity">Минск</span><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="change-city-link" data-target="#city1">Минск</li>
+            <li class="change-city-link" data-target="#city2">Минская обл.</li>
+
+            <li class="change-city-link" data-target="#city3">Бобруйск</li>
+
+            <li class="change-city-link" data-target="#city4">Брест</li>
+            <li class="change-city-link" data-target="#city5">Брестская обл.</li>
+            <li class="change-city-link" data-target="#city6">Витебск</li>
+            <li class="change-city-link" data-target="#city7">Витебская обл.</li>
+            <li class="change-city-link" data-target="#city8">Гомель</li>
+            <li class="change-city-link" data-target="#city9">Гомельская обл.</li>
+
+            <li class="change-city-link" data-target="#city10">Мозырь</li>
+
+            <li class="change-city-link" data-target="#city11">Гродно</li>
+            <li class="change-city-link" data-target="#city12">Гродненская обл.</li>
+            <li class="change-city-link" data-target="#city13">Лида</li>
+
+            <li class="change-city-link" data-target="#city14">Могилев</li>
+          </ul>
         </div>
       </div>
       <div class="col-sm-2 text-center">
         <img src="img/logo2.png">
       </div>
       <div class="col-sm-2 text-center phone">
-        <p>+375 33 600 42 93</p>
-        <p>+375 29 338 19 87</p>
+        <div id="city1">
+          <p>+375 33 600 42 93</p>
+          <p>+375 29 338 19 87</p>
+        </div>
+        <!--Минская обл.-->
+        <div id="city2" class="hidden">
+          <p>+375 33 600 42 93</p>
+          <p>+375 29 338 19 87</p>
+        </div>
+        <!--Бобруйск-->
+        <div id="city3" class="hidden">
+          <p>+375 33 328 78 62</p>
+        </div>
+        <!--Брест-->
+        <div id="city4" class="hidden">
+          <p>+375 33 329 24 77</p>
+        </div>
+        <!--Брестская обл.-->
+        <div id="city5" class="hidden">
+          <p>+375 33 329 24 77</p>
+        </div>
+        <!--Витебск-->
+        <div id="city6" class="hidden">
+          <p>+375 33 361 90 13</p>
+        </div>
+        <!--Витебская обл.-->
+        <div id="city7" class="hidden">
+          <p>+375 33 361-90-13</p>
+        </div>
+        <!--Гомель-->
+        <div id="city8" class="hidden">
+          <p>+375 25 755 64 21</p>
+          <p>+375 44 574 50 51</p>
+        </div>
+        <!--Гомельская обл.-->
+        <div id="city9" class="hidden">
+          <p>+375 25 755 64 21</p>
+          <p>+375 44 574 50 51</p>
+        </div>
+        <!--Мозырь-->
+        <div id="city10" class="hidden">
+          <p>+375 33 328 64 33</p>
+        </div>
+        <!--Гродно-->
+        <div id="city11" class="hidden">
+          <p>+375 33 328 63 97</p>
+        </div>
+        <!--Гродненская обл.-->
+        <div id="city12" class="hidden">
+          <p>+375 25 771 13 89</p>
+        </div>
+        <!--Лида-->
+        <div id="city13" class="hidden">
+          <p>+375 33 362 08 20</p>
+        </div>
+        <!--Могилев-->
+        <div id="city14" class="hidden">
+          <p>+375 33 328 78 03</p>
+        </div>
       </div>
       <div class=" col-sm-3 col-md-2 text-center">
-        <a href="#" class="btn btn-callback ">Вам перезвонить?</a>
-        <a href="#" class="btn btn-call ">Вызвать нас в школу</a>
+        <a href="#" class="btn btn-callback " data-toggle="modal" data-target="#callback">Вам перезвонить?</a>
+        <a href="#" class="btn btn-call " data-toggle="modal" data-target="#school">Вызвать нас в школу</a>
       </div>
     </div>
     <div class="navbar" role="navigation">
@@ -59,10 +140,10 @@
       <div class="col-sm-12 col-md-12 col-lg-6 layout-up">
         <h1 class="text-uppercase text-center ">Это альбом принт!</h1>
         <div class="col-sm-12 text-center">
-          <a href="#" class=" btn">Заказать альбом</a>
+          <a href="#" class=" btn" data-toggle="modal" data-target="#order">Заказать альбом</a>
         </div>
         <div class="col-sm-12 text-center">
-          <a href="#" class="btn btn-yellow ">Заказать презентацию</a>
+          <a href="#" class="btn btn-yellow " data-toggle="modal" data-target="#presentation">Заказать презентацию</a>
         </div>
       </div>
     </div>
@@ -122,15 +203,15 @@
       </div>
     </div>
     <div class="row row-visible-4 visible-xs">
-       <div class="col-xs-offset-1 col-xs-10">
-         <h3>Более 65 страниц</h3>
-         <h3>3 бесплатные фотосъемки</h3>
-         <h3><span>Огромные</span> персональные фотографии</h3>
-       </div>
-       <div class="col-xs-12">
-           <img src="img/Album_3.png" width="100%" height="100%">
-         </div>
+      <div class="col-xs-offset-1 col-xs-10">
+        <h3>Более 65 страниц</h3>
+        <h3>3 бесплатные фотосъемки</h3>
+        <h3><span>Огромные</span> персональные фотографии</h3>
       </div>
+      <div class="col-xs-12">
+        <img src="img/Album_3.png" width="100%" height="100%">
+      </div>
+    </div>
   </div>
   <div class="pt5">
     <div class="container">
@@ -179,7 +260,7 @@
   <div class="pt7">
     <div class="container">
       <div class=" col-sm-12 text-center">
-        <a href="#" class="btn btn-call-us">Вызвать менеджера в школу</a>
+        <a href="#" class="btn btn-call-us" data-toggle="modal" data-target="#school">Вызвать менеджера в школу</a>
       </div>
       <div>
         <div class="col-sm-12">
@@ -279,7 +360,7 @@
         <p>
           Приняв участия в наших суперакциях
         </p>
-        <div class="col-sm-offset-1 col-sm-10 sales">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 sales">
           <div class="col-sm-4">
             <img src="img/low_price_1.png">
             <h4 class="do-it">Сделай Х2</h4>
@@ -288,8 +369,8 @@
             </p>
             <div class="social-btn">
               <div class="col-xs-12 col-sm-12">
-                <a href="#">Вконтакте</a>
-                <a href="#">Инстаграм</a>
+                <a href="https://vk.com/matthewslab">Вконтакте</a>
+                <a href="https://instagram.com/matthewslab">Инстаграм</a>
                 <a href="#">Фейсбук</a>
               </div>
             </div>
@@ -302,8 +383,8 @@
             </p>
             <div class="social-btn">
               <div class="col-xs-12 col-sm-12">
-                <a href="#">Вконтакте</a>
-                <a href="#">Инстаграм</a>
+                <a href="https://vk.com/matthewslab">Вконтакте</a>
+                <a href="https://instagram.com/matthewslab">Инстаграм</a>
                 <a href="#">Фейсбук</a>
               </div>
             </div>
@@ -316,8 +397,8 @@
             </p>
             <div class="social-btn">
               <div class="col-xs-12 col-sm-12">
-                <a href="#">Вконтакте</a>
-                <a href="#">Инстаграм</a>
+                <a href="https://vk.com/matthewslab">Вконтакте</a>
+                <a href="https://instagram.com/matthewslab">Инстаграм</a>
                 <a href="#">Фейсбук</a>
               </div>
             </div>
@@ -330,7 +411,7 @@
     <div class="container">
       <h2>Мы готовы ответить на все ваши вопросы!</h2>
       <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 text-center">
-        <a href="#" class="btn ">Заказать обратный звонок</a>
+        <a href="#" class="btn " data-toggle="modal" data-target="#callback">Заказать обратный звонок</a>
       </div>
     </div>
   </div>
@@ -341,7 +422,7 @@
         Процесс создания альбомов
       </p>
       <div class="row">
-        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-5 process-production">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-1 col-md-4 process-production">
           <h4>2 фотосессии</h4>
           <p>Около 7 дней после фотосессии обрабатываются фотографии.</p>
         </div>
@@ -353,7 +434,7 @@
         <div class="col-sm-offset-4 col-sm-2 col-md-offset-5 col-md-2 text-center ">
           <img src="img/create_icon_2.png">
         </div>
-        <div class=" col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-5 process-production">
+        <div class="col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-4 process-production">
           <h4>Выбираем фотографии в личном кабинете</h4>
           <p>В течении 7 дней после фотосъемок все ваши фотографии будут доступны для съемок.</p>
         </div>
@@ -368,7 +449,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-5 process-production">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-1 col-md-4 process-production">
           <h4>Создаем макет альбома</h4>
           <p>В течении 14 дней после выбора фотографий наши специалисты создают макет альбома в электронном виде.</p>
         </div>
@@ -380,7 +461,7 @@
         <div class="col-sm-offset-4 col-sm-2 col-md-offset-5 col-md-2 text-center ">
           <img src="img/create_icon_4.png">
         </div>
-        <div class="col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-5 process-production">
+        <div class="col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-4 process-production">
           <h4>Утверждаем макет в личном кабинете</h4>
           <p>Вносим корректировки в макет альбома согласно вашим пожеланиям.</p>
         </div>
@@ -395,7 +476,7 @@
         </div>
       </div>
       <div class="row ">
-        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-0 col-md-offset-1 col-md-5 process-production">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-offset-1 col-md-4 process-production">
           <h4>Печатаем альбом</h4>
           <p>С момента утверждения вами альбома печатаем в течении 30 дней.</p>
         </div>
@@ -429,21 +510,21 @@
                   <div class="item slides active">
                     <div class="slide-1">
                       <div class="col-sm-4">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
@@ -454,21 +535,21 @@
                   <div class="item slides">
                     <div class="slide-2">
                       <div class="col-sm-4">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
@@ -479,21 +560,21 @@
                   <div class="item slides">
                     <div class="slide-3">
                       <div class="col-sm-4">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
@@ -504,21 +585,21 @@
                   <div class="item slides">
                     <div class="slide-4">
                       <div class="col-sm-4">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
                         </p>
                       </div>
                       <div class="col-sm-4 hidden-xs">
-                        <img src="img/Reviews.png">
+                        <img src="img/Reviews.png" width="235" height="235">
                         <h4>Полина Сахарова</h4>
                         <p>
                           <span>Москва</span><br> Всё безумно круто
@@ -544,14 +625,14 @@
       <p>
         Бесплатная презентация в вашей школе
       </p>
-      <form class="row">
+      <form class="row" action="sendmail.php" id="back-form">
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-4">
-          <input type="text" class="form-control" placeholder="Ваше имя*">
-          <input type="tel" class="form-control" placeholder="Ваш телефон*">
-          <input type="text" class="form-control" placeholder="Город*">
+          <input type="text" class="form-control" name="name" placeholder="Ваше имя*" required>
+          <input type="tel" class="form-control" name="phone" placeholder="Ваш телефон*" required>
+          <input type="text" class="form-control" name="city" placeholder="Город*" required>
         </div>
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
-          <textarea class="form-control" placeholder="Ваше сообщение*"></textarea>
+          <textarea class="form-control" name="text" placeholder="Ваше сообщение*" required></textarea>
         </div>
         <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
           <button type="submit" class="btn text-center">Написать нам</button>
@@ -561,17 +642,109 @@
   </div>
   <div class="pt15">
     <div clas="container">
-      <div class="col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10 text-center">
+      <div class="col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10 text-center">
         <a href="#">Фейсбук</a>
-        <a href="#">Вконтакте</a>
-        <a href="#">Инстраграм</a>
+        <a href="https://vk.com/matthewslab">Вконтакте</a>
+        <a href="https://instagram.com/matthewslab">Инстраграм</a>
         <a href="#">Гугл+</a>
       </div>
     </div>
   </div>
-  
+  <div class="modal fade" id="callback" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="popup-closer" data-dismiss="modal"></div>
+          <p class="modal-title">Заказать обратный звонок</p>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc">Заполните форму и мы свяжемся с Вами в течение 30 минут</p>
+          <form class="callbackForm" action="" accept-charset="UTF-8">
+            <input class="modal-input" type="text" name="name" required="required" placeholder="Имя*">
+            <input class="modal-input" type="text" name="phone" required="required" placeholder="Телефон*">
+            <input class="modal-input" type="text" name="town" required="required" placeholder="Город*">
+            <input onclick="yaCounter32577630.reachGoal('callback'); return true;ga('send', 'event', 'knopka', 'callback');" type="submit" name="process" class="btn popup_button btn-warning " value="Перезвоните мне">
+          </form>
+          <p>или позвоните нам +375(29)&nbsp;338-19-87</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="school" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="popup-closer" data-dismiss="modal"></div>
+          <p class="modal-title">Вызвать менеджера в школу</p>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc">Заполните форму и мы свяжемся с Вами в течение 30 минут</p>
+          <form class="schoolForm" action="" accept-charset="UTF-8">
+            <input class="modal-input" name="town" placeholder="Город*" type="text" required="">
+            <input class="modal-input" name="school" placeholder="Школа" type="text">
+            <input class="modal-input" name="class" placeholder="Класс" type="text">
+            <input class="modal-input" name="name" placeholder="Имя*" type="text" required="">
+            <input class="modal-input" name="phone" placeholder="Телефон*" type="text" required="">
+            <input onclick="yaCounter32577630.reachGoal('buyprezent'); return true;ga('send', 'event', 'knopka', 'buyprezent');" type="submit" name="process" class="btn popup_button btn-warning" value="Вызвать в школу">
+          </form>
+          <p>или позвоните нам +375(29)&nbsp;338-19-87</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="presentation" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="popup-closer" data-dismiss="modal"></div>
+          <p class="modal-title">Заказать презентацию альбома</p>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc">Заполните форму и мы свяжемся с Вами в течение 30 минут</p>
+          <form class="presentationForm" action="" accept-charset="UTF-8">
+            <input class="modal-input" name="town" placeholder="Город*" type="text" required="">
+            <input class="modal-input" name="school" placeholder="Школа" type="text">
+            <input class="modal-input" name="class" placeholder="Класс" type="text">
+            <input class="modal-input" name="name" placeholder="Имя*" type="text" required="">
+            <input class="modal-input" name="phone" placeholder="Телефон*" type="text" required="">
+            <input onclick="yaCounter32577630.reachGoal('buyprezent'); return true;ga('send', 'event', 'knopka', 'buyprezent');" type="submit" name="process" class="btn popup_button btn-warning" value="Заказать презентацию">
+          </form>
+          <p>или позвоните нам +375(29)&nbsp;338-19-87</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="order" tabindex="-1" role="dialog" data-sendtitle="">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="popup-closer" data-dismiss="modal"></div>
+          <p class="modal-title">Заказать альбом</p>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc">Заполните форму и мы свяжемся с Вами в течение 30 минут</p>
+          <form class="orderForm" action="" accept-charset="UTF-8">
+            <input class="modal-input" type="text" name="name" required="required" placeholder="Имя*">
+            <input class="modal-input" type="text" name="phone" required="required" placeholder="Телефон*">
+            <input class="modal-input" type="text" name="town" required="required" placeholder="Город*">
+            <input class="modal-input" type="text" name="pass" placeholder="Cекретный пароль для скидки (если знаете)">
+            <div class="text-left" style="margin-bottom:10px;"><input type="checkbox" name="video" style="margin-right:10px;"><span>Интересует информация о видеоклипах?</span></div>
+            <input onclick="yaCounter32577630.reachGoal('buyalbom'); return true;ga('send', 'event', 'knopka', 'buyalbom');" type="submit" name="process" class="btn popup_button btn-warning" value="Заказать альбом">
+          </form>
+          <p>или позвоните нам +375(29)&nbsp;338-19-87</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+
 </body>
 
 </html>
